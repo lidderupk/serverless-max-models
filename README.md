@@ -17,10 +17,10 @@ MAX models [supporting deployment](https://developer.ibm.com/exchanges/models/al
 
 - Set the following environment variables (`MODELS`) with MAX model names and run build script.
   - `MODELS`: MAX model names, e.g. `max-facial-emotion-classifier`
-  - `USERNAME`: Docker Hub username.
+  - `USER_NAME`: Docker Hub username.
 
 ```
-MODELS="..." USERNAME="..." ./build.sh
+MODELS="..." USER_NAME="..." ./build.sh
 ```
 
 This will create Docker images locally with the MAX model names and push to Docker Hub for usage in IBM Cloud Functions. IBM Cloud Functions only supports public Docker images as custom runtimes. 
